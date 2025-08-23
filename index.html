@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thailand Transport Hub - Your Comfortable Journey Starts Here</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-route"></i>
+                <span>Thailand Transport Hub</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#routes" class="nav-link">Routes</a></li>
+                <li><a href="#booking" class="nav-link">Book Now</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Discover Thailand with Comfort</h1>
+            <p>Experience seamless transportation across the Land of Smiles. From bustling Bangkok to serene beaches, we make your journey comfortable and memorable.</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="scrollToSection('booking')">
+                    <i class="fas fa-ticket-alt"></i>
+                    Book Your Journey
+                </button>
+                <button class="btn-secondary" onclick="scrollToSection('routes')">
+                    <i class="fas fa-map-marked-alt"></i>
+                    Explore Routes
+                </button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="floating-card">
+                <i class="fas fa-clock"></i>
+                <h3>24/7 Support</h3>
+                <p>Always here to help you</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Transportation Services</h2>
+            <p class="section-subtitle">Choose the perfect way to explore Thailand</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>Air Travel</h3>
+                    <p>Domestic flights connecting major cities and tourist destinations across Thailand.</p>
+                    <ul>
+                        <li>Bangkok to Phuket</li>
+                        <li>Chiang Mai to Koh Samui</li>
+                        <li>International connections</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-train"></i>
+                    </div>
+                    <h3>Rail Services</h3>
+                    <p>Comfortable train journeys through scenic landscapes and historic routes.</p>
+                    <ul>
+                        <li>Bangkok to Chiang Mai</li>
+                        <li>Southern Railway</li>
+                        <li>Sleeping car options</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bus"></i>
+                    </div>
+                    <h3>Bus Networks</h3>
+                    <p>Extensive bus network covering cities, towns, and remote areas.</p>
+                    <ul>
+                        <li>VIP buses with AC</li>
+                        <li>Local city buses</li>
+                        <li>Express services</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-ship"></i>
+                    </div>
+                    <h3>Ferry Services</h3>
+                    <p>Island hopping and coastal transportation to beautiful destinations.</p>
+                    <ul>
+                        <li>Bangkok to Koh Samet</li>
+                        <li>Phuket to Phi Phi</li>
+                        <li>Koh Samui connections</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Car Rentals</h3>
+                    <p>Flexible car rental options for independent exploration.</p>
+                    <ul>
+                        <li>Self-drive options</li>
+                        <li>Chauffeur services</li>
+                        <li>GPS navigation</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-motorcycle"></i>
+                    </div>
+                    <h3>Local Transport</h3>
+                    <p>Convenient local transportation including tuk-tuks and motorbikes.</p>
+                    <ul>
+                        <li>Tuk-tuk rides</li>
+                        <li>Motorbike taxis</li>
+                        <li>BTS/MRT metro</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Routes Section -->
+    <section id="routes" class="routes">
+        <div class="container">
+            <h2>Popular Routes</h2>
+            <p class="section-subtitle">Discover the most loved journeys in Thailand</p>
+            
+            <div class="routes-grid">
+                <div class="route-card">
+                    <div class="route-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400" alt="Bangkok">
+                    </div>
+                    <div class="route-content">
+                        <h3>Bangkok → Chiang Mai</h3>
+                        <p>Journey from the bustling capital to the cultural heart of Northern Thailand</p>
+                        <div class="route-details">
+                            <span><i class="fas fa-clock"></i> 12-15 hours</span>
+                            <span><i class="fas fa-dollar-sign"></i> From $15</span>
+                        </div>
+                        <button class="btn-outline">View Details</button>
+                    </div>
+                </div>
+
+                <div class="route-card">
+                    <div class="route-image">
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400" alt="Phuket">
+                    </div>
+                    <div class="route-content">
+                        <h3>Bangkok → Phuket</h3>
+                        <p>From city life to tropical paradise and pristine beaches</p>
+                        <div class="route-details">
+                            <span><i class="fas fa-clock"></i> 1.5 hours (flight)</span>
+                            <span><i class="fas fa-dollar-sign"></i> From $45</span>
+                        </div>
+                        <button class="btn-outline">View Details</button>
+                    </div>
+                </div>
+
+                <div class="route-card">
+                    <div class="route-image">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400" alt="Koh Samui">
+                    </div>
+                    <div class="route-content">
+                        <h3>Bangkok → Koh Samui</h3>
+                        <p>Escape to the island of coconut palms and crystal waters</p>
+                        <div class="route-details">
+                            <span><i class="fas fa-clock"></i> 1 hour (flight)</span>
+                            <span><i class="fas fa-dollar-sign"></i> From $60</span>
+                        </div>
+                        <button class="btn-outline">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2>Book Your Journey</h2>
+            <p class="section-subtitle">Simple, fast, and secure booking process</p>
+            
+            <div class="booking-container">
+                <div class="booking-form">
+                    <form id="bookingForm">
+                        <div class="form-group">
+                            <label for="from">From</label>
+                            <select id="from" required>
+                                <option value="">Select departure city</option>
+                                <option value="bangkok">Bangkok</option>
+                                <option value="chiang-mai">Chiang Mai</option>
+                                <option value="phuket">Phuket</option>
+                                <option value="koh-samui">Koh Samui</option>
+                                <option value="pattaya">Pattaya</option>
+                                <option value="krabi">Krabi</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="to">To</label>
+                            <select id="to" required>
+                                <option value="">Select destination city</option>
+                                <option value="bangkok">Bangkok</option>
+                                <option value="chiang-mai">Chiang Mai</option>
+                                <option value="phuket">Phuket</option>
+                                <option value="koh-samui">Koh Samui</option>
+                                <option value="pattaya">Pattaya</option>
+                                <option value="krabi">Krabi</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="departure">Departure Date</label>
+                                <input type="date" id="departure" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="return">Return Date (Optional)</label>
+                                <input type="date" id="return">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="passengers">Passengers</label>
+                                <select id="passengers" required>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5+</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="transport">Transport Type</label>
+                                <select id="transport" required>
+                                    <option value="">Select transport</option>
+                                    <option value="flight">Flight</option>
+                                    <option value="train">Train</option>
+                                    <option value="bus">Bus</option>
+                                    <option value="ferry">Ferry</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-search"></i>
+                            Search Available Routes
+                        </button>
+                    </form>
+                </div>
+
+                <div class="booking-features">
+                    <h3>Why Choose Us?</h3>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4>Safe & Secure</h4>
+                                <p>Licensed operators and insured vehicles</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>24/7 Support</h4>
+                                <p>Round-the-clock customer assistance</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-credit-card"></i>
+                            <div>
+                                <h4>Easy Payment</h4>
+                                <p>Multiple payment options available</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div>
+                                <h4>Mobile Friendly</h4>
+                                <p>Book on any device, anywhere</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Thailand Transport Hub</h2>
+                    <p>We are your trusted partner for comfortable and reliable transportation across Thailand. With years of experience and a deep understanding of local travel needs, we connect you to the most beautiful destinations in the Land of Smiles.</p>
+                    
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3>50,000+</h3>
+                            <p>Happy Customers</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>100+</h3>
+                            <p>Destinations</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>24/7</h3>
+                            <p>Support Available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1528181304800-259b08848526?w=500" alt="Thailand Transport">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p class="section-subtitle">We're here to help with your travel plans</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+66 2 123 4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@thailandtransporthub.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Sukhumvit Road, Bangkok 10110, Thailand</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Business Hours</h4>
+                            <p>24/7 Online Support</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-route"></i>
+                        <span>Thailand Transport Hub</span>
+                    </div>
+                    <p>Your comfortable journey through Thailand starts here. We connect you to the most beautiful destinations with reliable and safe transportation services.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#routes">Routes</a></li>
+                        <li><a href="#booking">Book Now</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Air Travel</a></li>
+                        <li><a href="#">Rail Services</a></li>
+                        <li><a href="#">Bus Networks</a></li>
+                        <li><a href="#">Ferry Services</a></li>
+                        <li><a href="#">Car Rentals</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Thailand Transport Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
