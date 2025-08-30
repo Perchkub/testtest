@@ -1,0 +1,74 @@
+version: '3.8'
+
+services:
+  thailand-transport-hub:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: thailand-transport-hub
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    
+    # Health check
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    
+    # Environment variables
+    environment:
+      - NGINX_HOST=localhost
+      - NGINX_PORT=8080
+    
+    # Resource limits
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 128M
+        reservations:
+          cpus: '0.1'
+          memory: 64M
+    
+    # Labels for better organization
+    labels:
+      - "com.thailandtransporthub.description=Thailand Transport Hub Website"
+      - "com.thailandtransporthub.version=1.0"
+      - "com.thailandtransporthub.vendor=Thailand Transport Hub"
+    
+    # Security options
+    security_opt:
+      - no-new-privileges:true
+    
+    # Networks
+    networks:
+      - thailand-transport-network
+
+  # Optional: Add a simple monitoring service
+  nginx-exporter:
+    image: nginx/nginx-prometheus-exporter:0.10.0
+    container_name: thailand-transport-nginx-exporter
+    ports:
+      - "9113:9113"
+    command:
+      - '-nginx.scrape-uri=http://thailand-transport-hub:8080/nginx_status'
+    depends_on:
+      - thailand-transport-hub
+    restart: unless-stopped
+    profiles:
+      - monitoring
+    networks:
+      - thailand-transport-network
+
+networks:
+  thailand-transport-network:
+    driver: bridge
+    name: thailand-transport-network
+
+# Optional volumes for logs
+volumes:
+  nginx-logs:
+    driver: local
